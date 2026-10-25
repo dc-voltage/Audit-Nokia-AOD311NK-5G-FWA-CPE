@@ -1,0 +1,35 @@
+{
+  "X_AIRTEL_": {
+    "LanAccessCfg": {
+      "SshDisabled": false,
+      "TelnetDisabled": false,
+      "WebMgmtEnabled": true,
+      "ManagementVlan": 1
+    },
+    "WanSelection": {
+      "PreferredMode": "LTE",
+      "FallBackMode": "NR",
+      "Force4G": false
+    },
+    "FirmwareUpdate": {
+      "AutoDownload": true,
+      "CurrentSlot": "B",
+      "UpdateStatus": "IDLE"
+    }
+  },
+  "X_ALU_COM_": {
+    "TR69DNSServers": "",               // empty in the observed snapshot
+    "ModemStatus": "READY",
+    "Rssi": -57,                        // dBm, LTE band 7
+    "SignalQuality": 12                 // RSRQ value
+  },
+  "X_CT_COM_": {
+    "IPMode": 3,                        // 3 = LTE/CP‑IoT mode (qualcomm definition)
+    "IPv6ConnStatus": "Connected",
+    "IPv6IPAddress": "2401:4900:4f6f:cafb:3901:addb:448a:f77e",
+    "IPv6Prefix": "2401:4900:4f6f:cafb:3901:addb:448a:f77e/64",
+    "DefaultIPv6Gateway": "fe80::d4af:c4fd:aa8e:4e53",
+    "IPv6DNSServers": "",
+    "DNSOverrideAllowed": 1
+  }
+}
