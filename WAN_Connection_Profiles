@@ -1,0 +1,8 @@
+Parameter	Value (from main_web_app.cgi payload)	Interpretation
+WAN profile name	5gwan_TR069_INTERNET_1	Custom‑named IP connection object; the firmware does not use the standard WANIPConnection indices (counts = 0).
+Connection type	IP_Routed	Routed IPv4/IPv6 mode; no PPPoE.
+Addressing	Static IPv4 10.112.123.3/29 (mask 255.255.255.248)	Provider‑assigned block; CPE acts as a downstream NAT router.
+IPv6	Enabled, SLAAC‑derived global address 2401:4900:4f6f:cafb:3901:addb:448a:f77e/64	IPv6 stack is always on; the default gateway is link‑local, typical for LTE‑only deployments.
+DNS	10.240.17.231 10.240.17.247	Provider DNS; DNSOverrideAllowed = 1 indicates the CPE may override DNS via TR‑069.
+X‑mode	X_CT_COM_IPMode = 3	Qualcomm internal flag meaning “LTE/5G‑NR mixed mode”.
+VLAN tag	xponLinkCfg.VLANIDMark = 1	Single‑tagged VLAN 1 used for the optical WAN (GPON/EPON front‑haul).
