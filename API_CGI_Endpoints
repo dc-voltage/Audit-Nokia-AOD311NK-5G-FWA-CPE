@@ -1,0 +1,23 @@
+#	URL (scheme)	HTTP Method	Status (observed)	Typical Response / Purpose	Notes
+1	https://192.168.0.1/	GET	200	Home page – HTML source is a JavaScript‑driven SPA, no standard <form> tags.	Landing page for the UI; three JS bundles are referenced (polyfills‑B6TNHZQ6.js, scripts‑NRYFKFCL.js, main‑YQ6EB5PH.js).
+2	https://192.168.0.1/main_web_app.cgi	GET	200	Returns a JSON payload with device‑status, WAN info, and vendor‑specific namespaces (X_AIRTEL_, X_ALU_COM_, X_CT_COM_). No authentication required.	This is the primary “public” API used by the web UI.
+3	https://192.168.0.1/dashboard_status_web_app.cgi	GET	401 (Unauthenticated)	Requires a valid session cookie (set after login).	Returns the same JSON structure as #2 once a USP/US‑Auth session is established.
+4	https://192.168.0.1/capabilities_status_web_app.cgi	GET	200	Provides a compact capability mask (e.g., Is_Gfast, Is_hybrid_cpe, is_support_tr181).	Useful for quick capability checks.
+5	https://192.168.0.1/speed_test_tr143_status_web_app.cgi	GET	200	Returns speed‑test metrics (download/upload, latency).	No auth required.
+6	https://192.168.0.1/wan_config_glb_status_web_app.cgi	GET	403 (Forbidden)	Refused without credentials.	Likely requires a logged‑in session or specific role.
+7	https://192.168.0.1/container_management_status_web_app.cgi	GET	403	Same as #6 – container‑management data not exposed.	 
+8	https://192.168.0.1/service_function_web_app.cgi	POST (login payload)	401 (unless correct credentials)	Accepts username=admin&password=ANKODA3F00037785; on success creates a session cookie used by other CGIs.	Attempted login with the supplied creds; password works for UI but not for SSH.
+9	https://192.168.0.1/device_home_nw_client_status_web_app.cgi	GET	200	Lists connected home‑network clients (IP, MAC, hostname).	No auth required.
+10	https://192.168.0.1/overview_get_web_app.cgi	GET	200	Returns a summary map of the CPE (interfaces, status).	No auth required.
+11	https://192.168.0.1/overview_status_web_app.cgi?nocache	GET	401	Same as #2/ #3 – needs a session.	 
+12	https://192.168.0.1/api/v1/auth/login	POST (JSON)	404	Not present on this firmware version.	 
+13	https://192.168.0.1/api/login	POST (JSON)	404	Not present.	 
+14	http://192.168.0.1/usp	POST (CWMP/USP)	Timeout (30 s)	The USP controller listens on TCP 5090, but the port is filtered by the network‑level firewall; no response.	 
+15	http://192.168.0.1/cwmp	POST (CWMP)	Timeout	Same as #14 – unreachable from this host.	 
+16	https://192.168.0.1/tr181	GET	404	No generic TR‑181 dump endpoint.	 
+17	http://192.168.0.1/tr181	GET	Exit code 7 (curl could not connect)	Same as #14.	 
+18	https://192.168.0.1/deviceinfo	GET	404	No dedicated /deviceinfo page.	 
+19	https://192.168.0.1/status	GET	404	No generic /status page.	 
+20	https://192.168.0.1/cgi-bin/luci	GET	404	LUCI not enabled on this image.	 
+21	http://192.168.0.1/main_web_app.cgi	GET	200 (identical to #2, HTTP version)	Same JSON payload over plain HTTP.	 
+22	https://192.168.0.1/web_whw/#/login (browser UI)	GET (human)	200	The Angular SPA login page; fields: Username (placeholder " "), Password, Sign‑in button (initially disabled).	This is the UI that the JavaScript bundles (main‑YQ6EB5PH.js, …) interact with.
