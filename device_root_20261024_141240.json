@@ -1,0 +1,23 @@
+{
+  "ManufacturerOUI": "D8EFCD",
+  "ProductClass": "FWA",
+  "ModelName": "AOD311NK",
+  "Vendor": "Nokia",
+  "SerialNumber": "ANKODA2F00015260",
+  "HardwareVersion": "3TG03366AAAA",
+  "SoftwareVersion": "AOD311NK_R_1.0",
+  "X_ASB_COM_Chipset": "",
+  "AdditionalSoftwareVersion": "5G-ODCPE-BHARTI_R240200BieT0401E0780",
+  "X_ASB_COM_FriendlyName": "",
+  "UpTime": 11019,
+  "RootMacAddress": "60:98:49:64:42:8E",
+  "IPAddress": "192.168.0.1",
+  "lot_number": "251009",
+  "cpu_usageinfo": {
+    "CPUUsage": 14
+  },
+  "mem_info": {
+    "Total": 221304,
+    "Free": 12680
+  }
+}

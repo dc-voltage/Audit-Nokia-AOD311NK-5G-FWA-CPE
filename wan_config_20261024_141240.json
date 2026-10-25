@@ -1,0 +1,126 @@
+{
+  "wan_conns": [
+    {
+      "wan_num": 1,
+      "_oid": 1,
+      "WANCommonInterfaceConfig": {
+        "WANAccessType": "access_dev2"
+      },
+      "WANIPConnectionNumberOfEntries": 0,
+      "WANPPPConnectionNumberOfEntries": 0,
+      "X_ASB_COM_ConnType": 0,
+      "xponLinkCfg": {
+        "Enable": 1,
+        "Mode": 0,
+        "VLANIDMark": 1,
+        "P_802_1pMark": 0
+      },
+      "ipConns": [
+        {
+          "_type": "ip",
+          "_iid": 20101,
+          "Enable": 1,
+          "ConnectionType": "IP_Routed",
+          "Name": "5gwan_TR069_INTERNET_1",
+          "ConnectionTrigger": "AlwaysOn",
+          "NATEnabled": 1,
+          "AddressingType": "Static",
+          "ExternalIPAddress": "10.112.123.3",
+          "SubnetMask": "255.255.255.248",
+          "DefaultGateway": "10.112.123.4",
+          "DNSServers": "10.240.17.231 10.240.17.247",
+          "X_CT_COM_LanInterface": "",
+          "X_CT_COM_ServiceList": "TR069,INTERNET",
+          "X_CT_COM_LanInterface_DHCPEnable": 1,
+          "X_CT_COM_IPMode": 3,
+          "X_CT_COM_IPv6IPAddress": "2401:4900:4f6f:cafb:3901:addb:448a:f77e",
+          "ipv6_gateway": "fe80::f4f1:ad5d:d794:aa3",
+          "static_enable": "1",
+          "X_CT_COM_IPv6IPAddressOrigin": "AutoConfigured",
+          "X_CT_COM_IPv6DNSServers": "",
+          "X_CT_COM_IPv6PrefixDelegationEnabled": 1,
+          "X_CT_COM_IPv6PrefixOrigin": "PrefixDelegation",
+          "X_CT_COM_DefaultIPv6Gateway": "fe80::d4af:c4fd:aa8e:4e53",
+          "X_CT_COM_IPv6DomainName": "",
+          "X_CT_COM_Dslite_Enable": 0,
+          "X_CT_COM_AftrMode": 0,
+          "X_CT_COM_Aftr": "",
+          "X_ALU_COM_isFixedWAN": 0,
+          "X_ALU_COM_DSCPMark": 0,
+          "DNSOverrideAllowed": 1,
+          "X_ALU_COM_TR69DNSServers": ""
+        }
+      ],
+      "pppConns": []
+    }
+  ],
+  "lan_ether": [
+    {
+      "X_CT_COM_VLAN": ""
+    },
+    {
+      "X_CT_COM_VLAN": ""
+    }
+  ],
+  "ipv4_route": [
+    {
+      "_oid": 1,
+      "X_ASB_COM_PhyType": 3,
+      "isTr069Domain": 1
+    },
+    {
+      "_oid": 2,
+      "X_ASB_COM_PhyType": 3,
+      "isTr069Domain": 1
+    },
+    {
+      "_oid": 3,
+      "X_ASB_COM_PhyType": 3,
+      "isTr069Domain": 1
+    },
+    {
+      "_oid": 4,
+      "X_ASB_COM_PhyType": 3,
+      "isTr069Domain": 1
+    }
+  ],
+  "wlan_route": [
+    {
+      "_oid": 1,
+      "SSID": -1359218102,
+      "X_ASB_COM_routeMode": 2
+    }
+  ],
+  "SSID": [
+    {
+      "SSID_num": 1,
+      "SSID": "ALCL-HGU"
+    }
+  ],
+  "link_type": "ETHERNET",
+  "AutoPortBind": {
+    "X_ALU_COM_AutoPortBindEnable": 0,
+    "X_ALU_COM_AutoPortBindMode": 1,
+    "AutoBindEntries": [
+      {}
+    ]
+  },
+  "is_access_type_visible_enable": 0,
+  "isgeneric": 0,
+  "is_gfast": 0,
+  "is_btgf": 0,
+  "is_f240": 0,
+  "has_wifi": 0,
+  "voipCfgtypeObj": "TR069",
+  "keep_alive_support": "TRUE",
+  "iptv_support": "TRUE",
+  "ipv6_cfg": {
+    "Mode": 3
+  },
+  "MeshandGuestList": [],
+  "voip_support": "FALSE",
+  "support_DHCPv6_PD_NA": "TRUE",
+  "sourceinterface": "",
+  "pppoe_account_support": "TRUE",
+  "create_newwan_support": "TRUE"
+}

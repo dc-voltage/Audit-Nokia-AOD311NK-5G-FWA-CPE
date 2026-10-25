@@ -1,0 +1,144 @@
+{
+  "QT11AC_Wifi": 0,
+  "domainGrp": [],
+  "has_wifi": 0,
+  "wlan_status_glb": [
+    {
+      "SSID_num": 1,
+      "RadioEnabled": 1,
+      "Enable": 1,
+      "SSID": "ALCL-HGU",
+      "Channel": 0,
+      "ChannelsInUse": "",
+      "BeaconType": "11i",
+      "Standard": "n",
+      "MacAddr": "0.0.0.0",
+      "BasicAuthenticationMode": "None",
+      "BasicEncryptionModes": "None",
+      "WPAAuthenticationMode": "PSKAuthentication",
+      "WPAEncryptionModes": "AESEncryption",
+      "TotalBytesSent": 0,
+      "TotalBytesReceived": 0,
+      "TotalPacketsSent": 0,
+      "X_CT_COM_PowerValue": 0,
+      "X_CT_COM_Powerlevel": 2,
+      "TransmitPower": 100,
+      "TotalPacketsReceived": 0,
+      "TotalAssociations": 0,
+      "X_ASB_COM_RxErrors": 0,
+      "X_ASB_COM_RxDrops": 0,
+      "X_ASB_COM_TxErrors": 0,
+      "X_ASB_COM_TxDrops": 0,
+      "status": {
+        "BytesSent": 2931920401,
+        "BytesReceived": 0,
+        "X_ASB_COM_PacketsSent": 2931920401,
+        "X_ASB_COM_PacketsReceived": 0,
+        "X_ASB_COM_TxErrors": 0,
+        "X_ASB_COM_RxErrors": 0,
+        "X_ASB_COM_TxDrops": 0,
+        "X_ASB_COM_RxDrops": 0
+      }
+    }
+  ],
+  "lanhost": {
+    "1": {
+      "MACAddress": "",
+      "HostName": "Unknown_",
+      "IPAddress": "",
+      "LeaseTimeRemaining": 0
+    },
+    "2": {
+      "MACAddress": "",
+      "HostName": "Unknown_",
+      "IPAddress": "",
+      "LeaseTimeRemaining": 0
+    }
+  },
+  "mwbind": {
+    "Mode": 1
+  },
+  "lan_ifip": {
+    "Enable": 1,
+    "IPInterfaceIPAddress": "192.168.0.1",
+    "IPInterfaceSubnetMask": "255.255.255.0",
+    "X_ASB_COM_RxPackets": 75846,
+    "X_ASB_COM_TxPackets": 352328,
+    "X_ASB_COM_RxBytes": 5607244,
+    "X_ASB_COM_TxBytes": 504308892,
+    "IPInterfaceAddressingType": "DHCP",
+    "X_ASB_COM_IfName": "bridge0",
+    "X_ASB_COM_FirewallEnabled": 0,
+    "X_ASB_COM_DhcpConnectionStatus": "Unconfigured",
+    "X_ASB_COM_DhcpIpAddress": "0.0.0.0",
+    "X_ASB_COM_DhcpSubnetMask": "0.0.0.0",
+    "X_ASB_COM_DhcpDefaultGateway": "0.0.0.0",
+    "X_ASB_COM_DhcpcPid": 0,
+    "X_ASB_COM_IPv6InterfaceAddress": "",
+    "X_ASB_COM_IPv6InterfaceAddressingType": "Delegated"
+  },
+  "lan_ether": [
+    {
+      "Enable": 1,
+      "Status": "Up",
+      "MACAddress": "60:98:49:64:42:8E",
+      "MACAddressControlEnabled": 0,
+      "MaxBitRate": "Auto",
+      "DuplexMode": "Full",
+      "X_ALU_COM_CurMaxBitRate": "1000",
+      "X_ALU_COM_CurDuplexMode": "Auto",
+      "X_ASB_COM_IfName": "",
+      "X_ASB_COM_EthernetPriorityMark": -1,
+      "X_ASB_COM_dot1qPvid": 1,
+      "X_ASB_COM_PhyType": 3,
+      "stat": {
+        "BytesSent": 504312592,
+        "BytesReceived": 6976366,
+        "PacketsSent": 352368,
+        "PacketsReceived": 75856,
+        "UnicastPacketsSent": 0,
+        "UnicastPacketsReceived": 0,
+        "MulticastPacketsSent": 0,
+        "MulticastPacketsReceived": 0,
+        "BroadcastPacketsSent": 0,
+        "BroadcastPacketsReceived": 0,
+        "ErrorsSent": 0,
+        "ErrorsReceived": 0,
+        "DiscardPacketsSent": 0,
+        "DiscardPacketsReceived": 0,
+        "UnknownProtoPacketsReceived": 0
+      }
+    },
+    {
+      "Enable": 1,
+      "Status": "Up",
+      "MACAddress": "",
+      "MACAddressControlEnabled": 0,
+      "MaxBitRate": "Auto",
+      "DuplexMode": "Auto",
+      "X_ALU_COM_CurMaxBitRate": "Auto",
+      "X_ALU_COM_CurDuplexMode": "Auto",
+      "X_ASB_COM_IfName": "",
+      "X_ASB_COM_EthernetPriorityMark": -1,
+      "X_ASB_COM_dot1qPvid": 1,
+      "X_ASB_COM_PhyType": 3,
+      "stat": {
+        "BytesSent": 0,
+        "BytesReceived": 0,
+        "PacketsSent": 0,
+        "PacketsReceived": 0,
+        "UnicastPacketsSent": 0,
+        "UnicastPacketsReceived": 0,
+        "MulticastPacketsSent": 0,
+        "MulticastPacketsReceived": 0,
+        "BroadcastPacketsSent": 0,
+        "BroadcastPacketsReceived": 0,
+        "ErrorsSent": 0,
+        "ErrorsReceived": 0,
+        "DiscardPacketsSent": 0,
+        "DiscardPacketsReceived": 0,
+        "UnknownProtoPacketsReceived": 0
+      }
+    }
+  ]
+}

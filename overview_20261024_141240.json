@@ -1,0 +1,45 @@
+{
+  "connection_status": [
+    {
+      "ConnectionStatus": 1
+    }
+  ],
+  "WAN": [
+    {
+      "Mode": "CellularOnly",
+      "ActiveWAN": "Cellular"
+    }
+  ],
+  "ethernet_wan_connection_status": [],
+  "cell_5G_stats_cfg": [
+    {
+      "stat": {
+        "SNRCurrent": -32768,
+        "RSRPCurrent": -32768,
+        "RSRPStrengthIndexCurrent": 0,
+        "RSRQCurrent": -32768,
+        "RankIndicator": "",
+        "SignalStrengthLevel": 0
+      }
+    }
+  ],
+  "cell_LTE_stats_cfg": [
+    {
+      "stat": {
+        "RSSICurrent": -82,
+        "SNRCurrent": 8,
+        "RSRPCurrent": -108,
+        "RSRPStrengthIndexCurrent": 2,
+        "RSRQCurrent": -10,
+        "RankIndicator": "",
+        "SignalStrengthLevel": 0
+      }
+    }
+  ],
+  "bluetooth_status": [
+    {
+      "Enable": 1,
+      "Status": "Down"
+    }
+  ]
+}

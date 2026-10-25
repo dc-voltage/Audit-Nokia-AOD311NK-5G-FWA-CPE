@@ -1,0 +1,69 @@
+{
+  "wan_conns": [
+    {
+      "wan_num": 1,
+      "_oid": 1,
+      "WANIPConnectionNumberOfEntries": 0,
+      "WANPPPConnectionNumberOfEntries": 0,
+      "X_ASB_COM_ConnType": 0,
+      "WANCommonInterfaceConfig": {
+        "WANAccessType": "access_dev2"
+      },
+      "xponLinkCfg": {
+        "VLANIDMark": 1
+      },
+      "ipConns": [
+        {
+          "_type": "ip",
+          "_iid": 20101,
+          "Name": "5gwan_TR069_INTERNET_1",
+          "Enable": 1,
+          "ConnectionStatus": "Connected",
+          "ConnectionType": "IP_Routed",
+          "LastConnectionError": "ERROR_NONE",
+          "NATEnabled": 1,
+          "Uptime": 0,
+          "AddressingType": "Static",
+          "ExternalIPAddress": "10.112.123.3",
+          "SubnetMask": "255.255.255.248",
+          "DefaultGateway": "10.112.123.4",
+          "DNSServers": "10.240.17.231 10.240.17.247",
+          "X_CT_COM_IPMode": 3,
+          "X_CT_COM_IPv6ConnStatus": "Connected",
+          "X_CT_COM_IPv6IPAddress": "2401:4900:4f6f:cafb:3901:addb:448a:f77e",
+          "X_CT_COM_IPv6Prefix": "2401:4900:4f6f:cafb:3901:addb:448a:f77e/64",
+          "X_CT_COM_DefaultIPv6Gateway": "fe80::d4af:c4fd:aa8e:4e53",
+          "X_CT_COM_IPv6DNSServers": "",
+          "DNSOverrideAllowed": 1,
+          "X_ALU_COM_TR69DNSServers": "",
+          "Auto_IPv6Address": "2401:4900:4f6f:cafb:3901:addb:448a:f77e",
+          "Dhcpv6_prefix": "2401:4900:4f6f:cafb:3901:addb:448a:f77e/64",
+          "static_gateway": "fe80::f4f1:ad5d:d794:aa3",
+          "static_enable": "1",
+          "auto_enable": "0",
+          "dhcp_enable": "0",
+          "X_ASB_COM_RxDrops": 0,
+          "X_ASB_COM_TxDrops": 0,
+          "X_ASB_COM_RxErrors": 0,
+          "X_ASB_COM_TxErrors": 0,
+          "EthernetBytesSent": 0,
+          "EthernetBytesReceived": 2930045905,
+          "EthernetPacketsSent": 0,
+          "EthernetPacketsReceived": 2930045905
+        }
+      ],
+      "pppConns": []
+    }
+  ],
+  "Is_Gfast": 0,
+  "Uplink_status": {
+    "ConnectionStat": 1
+  },
+  "link_status": "Ethernet Link Status",
+  "is_support_tr181": "TRUE",
+  "uplink_management": {
+    "WorkMode": "Normal",
+    "MPTCPEnable": 0
+  },
+  "Is_hybrid_cpe": 0
+}
