@@ -1,0 +1,4 @@
+Step	Command / Action	Expected Output	Notes
+1.1	curl -k -s https://192.168.0.1/	HTML page (SPA, no <form>).	Confirms the router is reachable via HTTPS.
+1.2	curl -k -s https://192.168.0.1/main_web_app.cgi	JSON with X_AIRTEL_, X_ALU_COM_, X_CT_COM_ and WAN info.	No auth required – this is the “public” data set you will reuse later.
+1.3	Open https://192.168.0.1/web_whw/#/login in a browser.	Angular login form (Username placeholder " ", Password field, Sign‑in button initially disabled).	This is the UI you will use to obtain a session cookie.
