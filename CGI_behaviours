@@ -1,0 +1,5 @@
+Namespace	Example leaf (value)	Access without USP
+X_AIRTEL_	LanAccessCfg.SshDisabled = false ; WanSelection.PreferredMode = "LTE"	Read‑only – values appear in the JSON from #2; SetParameterValues returns 7021 (write‑protect) unless a USP session is established.
+X_ALU_COM_	TR69DNSServers = "" ; ModemStatus = "READY" ; Rssi = -57 ; SignalQuality = 12	Read‑only (same as above).
+X_CT_COM_	IPMode = 3 ; IPv6ConnStatus = "Connected" ; IPv6IPAddress = "2401:4900:4f6f:cafb:3901:addb:448a:f77e"	Read‑only.
+X_AIRTEL_OduCfg (ODU)	Enabled = true ; PowerLevel = 15 ; LosTimeout = 30 ; FailoverWan = "LTE"	Read‑only without USP; write attempts return error 7021.
