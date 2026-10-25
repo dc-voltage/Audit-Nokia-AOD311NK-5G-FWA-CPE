@@ -1,0 +1,1 @@
+Qualcomm SDX62 (LTE‑Advanced) / SDX65 (5 GHz NR) modem‑platform. The device tree reference in the firmware binary shows qcom,sdm845‑compatible blocks, indicating a high‑end integration modem‑CPU pair.
