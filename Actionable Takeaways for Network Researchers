@@ -1,0 +1,7 @@
+Recommendation	Rationale
+Network segmentation – place the CPE on a dedicated VLAN (e.g., VLAN 200) with no route to the internal management network.	Prevents lateral movement from a compromised internal host to the USP port (TCP 5090) and blocks inbound SSH scans.
+Disable WAN‑side SSH – set Device.X_AIRTEL_LanAccessCfg.SshDisabled = true via an ACS that has USP privileges.	Eliminates the open port 22 exposure to the Internet while preserving LAN‑side management capabilities.
+Monitor USP Inform messages – deploy a network‑IDS rule to capture USP Inform traffic (source IP, endpoint ID D8EFCD-ANKODA1F00016691).	Early detection of rogue ACS attempts or abnormal firmware‑update requests.
+Firmware‑update auditing – require signed OTA images and log the CurrentSlot and UpdateStatus fields (X_AIRTEL_FirmwareUpdate).	Guarantees that only authorized Airtel‑approved images are installed, mitigating the EDL‑based flash vector.
+Physical security – enforce rack‑level locks and restrict access to the CPE’s enclosure.	Removes the EDL/QDL attack path; any attempt to open the case should trigger a physical‑tamper alarm.
+Password policy – enforce a strong, unique admin password (>=16 characters, mixed case/numbers/symbols) and rotate periodically.	Reduces the risk of credential‑stuffing attacks against the web UI.
