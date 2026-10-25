@@ -1,0 +1,3 @@
+The board exposes the standard Qualcomm EDL 
+(Emergency Download) test points (GPIO‑based DETECT, DATA, CLK). 
+Accessing these points requires opening the enclosure; when grounded, the ROM code forces the modem into DL mode, allowing a QCT‑provided qfirehose/fastboot interface to flash any partition (including the previously read‑only slots). This is the primary vector for low‑level firmware modification.
